@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/power_menu" >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="power"
+            android:title="@string/shutdown" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="airplane"
+            android:title="@string/airplane" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="silent"
+            android:title="@string/silent" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="users"
+            android:title="@string/users" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="settings"
+            android:title="@string/settings" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="lockdown"
+            android:title="@string/lockdown" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

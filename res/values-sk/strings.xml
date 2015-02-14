@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_description">Prispôsobenie ponuky napájania v Androide Lollipop</string>
+    <string name="power_menu">Ponuka napájania</string>
+    <string name="shutdown">Vypnutie zariadenia</string>
+    <string name="airplane">Režim v lietadle</string>
+    <string name="silent">Tichý režim</string>
+    <string name="users">Prepínanie používateľov</string>
+    <string name="settings">Nastavenia</string>
+    <string name="lockdown">Zamknutie zariadenia</string>
+
+</resources>

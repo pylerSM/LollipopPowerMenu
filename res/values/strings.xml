@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Lollipop Power Menu</string>
+    <string name="app_description">Customize power menu in Android Lollipop</string>
+    <string name="power_menu">Power menu</string>
+    <string name="shutdown">Shutdown device</string>
+    <string name="airplane">Airplane mode</string>
+    <string name="silent">Silent mode</string>
+    <string name="users">Users switcher</string>
+    <string name="settings">Settings</string>
+    <string name="lockdown">Lock device</string>
+
+</resources>
