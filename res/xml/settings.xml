@@ -3,7 +3,7 @@
 
     <PreferenceCategory android:title="@string/power_menu" >
         <SwitchPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="power"
             android:title="@string/shutdown" />
         <SwitchPreference

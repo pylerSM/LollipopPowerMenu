@@ -21,22 +21,22 @@ public class LollipopPowerMenu implements IXposedHookZygoteInit {
 				.getName());
 		prefs.makeWorldReadable();
 		ArrayList<String> itemsList = new ArrayList<String>();
-		if (isEnabled(GLOBAL_ACTION_KEY_POWER)) {
+		if (isEnabled(GLOBAL_ACTION_KEY_POWER, true)) {
 			itemsList.add(GLOBAL_ACTION_KEY_POWER);
 		}
-		if (isEnabled(GLOBAL_ACTION_KEY_AIRPLANE)) {
+		if (isEnabled(GLOBAL_ACTION_KEY_AIRPLANE, false)) {
 			itemsList.add(GLOBAL_ACTION_KEY_AIRPLANE);
 		}
-		if (isEnabled(GLOBAL_ACTION_KEY_SILENT)) {
+		if (isEnabled(GLOBAL_ACTION_KEY_SILENT, false)) {
 			itemsList.add(GLOBAL_ACTION_KEY_SILENT);
 		}
-		if (isEnabled(GLOBAL_ACTION_KEY_USERS)) {
+		if (isEnabled(GLOBAL_ACTION_KEY_USERS, false)) {
 			itemsList.add(GLOBAL_ACTION_KEY_USERS);
 		}
-		if (isEnabled(GLOBAL_ACTION_KEY_SETTINGS)) {
+		if (isEnabled(GLOBAL_ACTION_KEY_SETTINGS, false)) {
 			itemsList.add(GLOBAL_ACTION_KEY_SETTINGS);
 		}
-		if (isEnabled(GLOBAL_ACTION_KEY_LOCKDOWN)) {
+		if (isEnabled(GLOBAL_ACTION_KEY_LOCKDOWN, false)) {
 			itemsList.add(GLOBAL_ACTION_KEY_LOCKDOWN);
 		}
 		String[] powerMenuItems = itemsList
@@ -45,7 +45,7 @@ public class LollipopPowerMenu implements IXposedHookZygoteInit {
 				"config_globalActionsList", powerMenuItems);
 	}
 
-	public boolean isEnabled(String preference) {
-		return prefs.getBoolean(preference, false);
+	public boolean isEnabled(String preference, boolean defaultValue) {
+	    return prefs.getBoolean(preference, defaultValue);
 	}
 }
